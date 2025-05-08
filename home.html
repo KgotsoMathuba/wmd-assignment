@@ -5,27 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev's Hairdo</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f2f2f2;
+      }
+  
+      header {
+        background-color: #555;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+  
+      nav {
+        background-color: #555;
+        padding: 10px 0;
+        text-align: center;
+      }
+  
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+  
+      nav a:hover {
+        color: #00cc88;
+      }
+  
+      .hero {
+        background-image: url('https://images.unsplash.com/photo-1559599189-4f9f918daf7c');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+  
+      .hero h1 {
+        font-size: 48px;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+      }
+  
+      .content {
+        padding: 40px 20px;
+        text-align: center;
+      }
+  
+      .content h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+  
+      .content p {
+        font-size: 18px;
+        max-width: 700px;
+        margin: auto;
+      }
+  
+      .buttons {
+        margin-top: 30px;
+      }
+  
+      .buttons a {
+        text-decoration: none;
+        background-color: #333;
+        color: white;
+        padding: 12px 25px;
+        margin: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s;
+      }
+  
+      .buttons a:hover {
+        background-color: #00cc88;
+      }
+  
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #222;
+        color: white;
+        margin-top: 40px;
+      }
+    </style> 
 </head>
 <body>
     <header>
         <h1>Welcome to Devin's Hairdo </h1>
-        <div class="side-nav">
         <nav>
-            <ul>
-                <li> <a href="booking.html">Booking | </li>
-                <li> <a href="gallery.html">Gallery | </a> </li>
-                <li> <a href="tips.html">Secret Recipe |</a> </li>
-                <li> <a href="reviews.html">Testimonials | </a> </li>
-                <li> <a href="contact_us.html">Contact Us | </a> </li>
-                <li><a href="service.html">Service</a></li>
-                <li><a href="bolg.html">Our Team</a></li>
-                
-                
-            </ul>
-        </nav>
-        </div>
+          <ul>
+            <li> <a href="home.html">Home | </a></li>
+              <li> <a href="booking.html">Booking |</li>
+              <li> <a href="tips.html">Secret Recipe | </a> </li>
+              <li> <a href="reviews.html">Testimonials | </a> </li>
+              <li> <a href="contact_us.html">Contact Us | </a> </li>
+              <li><a href="products.html">Products |</a></li>
+              <li><a href="work.html">Our Services</a></li>   
+          </ul>
+      </nav>
     </header> 
- 
+      <section class="content">
+        <h2>About Devin's Hairdo</h2>
+        <p>At Devin’s Hairdo, we pride ourselves in delivering modern, classic, and trendy haircuts that bring out the best in you. With experienced barbers and a stylish setting, you’ll leave feeling fresh and confident.</p>
+        
+        <div class="buttons">
+          <a href="booking.html">Book an Appointment</a>
+          <a href="work.html">View Services</a>
+        </div>
+      </section>
     
-</body>
-</html>
+      <footer>
+        &copy; 2025 Devin's Hairdo | All rights reserved.
+      </footer>
+    
+    </body>
+    </html>
+    

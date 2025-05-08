@@ -1,16 +1,13 @@
 /* General styles */
-body{
-    font-family: Arial, Helvetica, sans-serif;
+body {
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f2f2;
+  }
 /* Header styles */
-header{
-    background-color: #555;
-    color: black;
-    padding: 15px;
+header {
+    background-color: #333;
+    color: white;
     text-align: center;
 }
 nav ul{
@@ -25,7 +22,6 @@ nav ul li a{
     color: white;
     text-decoration: none;
 }
-
 .car{
     background-color: rgb(138, 110, 38);
     padding: 5px;
@@ -62,7 +58,6 @@ nav ul li a{
     width: 100%;
     border-radius: 8px;
 }
-
 .more-button{
     background-color: black;
     color: goldenrod;
@@ -77,14 +72,6 @@ nav ul li a{
     background-color:black;
     color: gold;
 }
-
-footer{
-    background-color: #555;
-    color: #222;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;   
-}
 .products{
     background-color: white;
     padding: 15px;
@@ -93,34 +80,76 @@ footer{
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     width: auto;
 }
-.side-nav {
-    position: fixed;
-    top: 0;
-    left: -120px; /* Hide most of it, leave 10px visible */
-    width: 150px;
-    height: 100%;
-    background-color: #333;
-    overflow-x: hidden;
-    transition: left 0.3s ease;
-    padding-top: 60px;
-    z-index: 1000;
-  }
-  
-  .side-nav a {
-    padding: 12px 20px;
-    text-decoration: none;
-    font-size: 18px;
+  header {
+    background-color: #555;
     color: white;
-    display: block;
-    transition: 0.3s;
+    padding: 20px 0;
+    text-align: center;
   }
-  
-  .side-nav a:hover {
-    background-color: #575757;
+  nav {
+    background-color: #555;
+    padding: 10px 0;
+    text-align: center;
   }
-  
-  /* Slide out when hovered */
-  .side-nav:hover {
-    left: 0;
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
   }
-  
+  nav a:hover {
+    color: #00cc88;
+  }
+  .hero {
+    background-image: url('https://images.unsplash.com/photo-1559599189-4f9f918daf7c');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 48px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  }
+  .content {
+    background-image: url(images/3996969-uhd_2160_4096_25fps.mp4);
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .content h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .content p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+  }
+  .buttons {
+    margin-top: 30px;
+  }
+  .buttons a {
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  .buttons a:hover {
+    background-color: #00cc88;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    margin-top: 40px;
+  }

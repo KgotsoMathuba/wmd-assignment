@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev's Hairdo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+    
+        .image-container {
+          display: flex;
+          gap: 20px;
+          flex-wrap: wrap;
+          padding: 20px;
+        }
+    
+        .image-container img {
+          width: 200px;
+          cursor: pointer;
+          border-radius: 10px;
+          transition: transform 0.2s;
+        }
+    
+        .image-container img:hover {
+          transform: scale(1.05);
+        }
+    
+        .popup {
+          display: none;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #111;
+          color: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          z-index: 1000;
+          width: 300px;
+          box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+    
+        .popup h3 {
+          margin-top: 0;
+        }
+    
+        .popup button {
+          background: gold;
+          border: none;
+          padding: 10px;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: 10px;
+          color: black;
+        }
+    
+        .overlay {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0,0,0,0.5);
+          z-index: 999;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Devin's Hairdo </h1>
+        <nav>
+            <ul>
+              <li> <a href="home.html">Home | </a></li>
+                <li> <a href="booking.html">Booking |</li>
+                <li> <a href="tips.html">Secret Recipe | </a> </li>
+                <li> <a href="reviews.html">Testimonials | </a> </li>
+                <li> <a href="contact_us.html">Contact Us | </a> </li>
+                <li><a href="products.html">Products |</a></li>
+                <li><a href="work.html">Our Services</a></li>   
+            </ul>
+        </nav>
+    </header> 
+    <div class="image-container">
+       <div class="products"> <img src="images/conditioner.png" width="250" alt="conditioner" onclick="showPopup(' A moisturizing product applied after shampooing to soften, detangle, and hydrate hair. It helps to restore moisture, improve manageability, and enhance the overall health and appearance of hair.')"> 
+        <p>P80</p>
+      </div>
+       <div class="products"> <img src="images/serum.png" alt="Cut 2" onclick="showPopup(' A lightweight, often silicone-based product that helps to smooth, protect, and add shine to hair. It can also help to tame frizz, reduce split ends, and provide a protective barrier against heat and environmental damage.')">
+      <p>P150</p>
+      </div>
+       <div class="products"> <img src="images/wave cream.png" width="250" alt="Wave Cream" onclick="showPopup('Devin Babers Wave Cream is a premium styling product designed to enhance and define natural wave patterns.')">
+      <p>P200</p>
+      </div>
+     <div class="products"><img src="images/shampoo.png" width="250" alt="Shampoo" onclick="showPopup(' cleansing product designed by Devin Babers to remove dirt, oil, and impurities from the hair and scalp. It often contains ingredients that nourish and strengthen hair, leaving it clean and refreshed.')">
+    <p>P100</p>
+    </div>
+    <div class="products"> <img src="images/download.png" width="250" alt="conditioner" onclick="showPopup('  A moisturizing product applied after shampooing to soften, detangle, and hydrate hair. It helps to restore moisture, improve manageability, and enhance the overall health and appearance of hair.')">
+    <p>P60</p>
+    </div>
+      </div>
+    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+<div class="popup" id="popup">
+  <h3>Product Information</h3>
+  <p id="popup-text"></p>
+  <button onclick="closePopup()">Close</button>
+</div>
+
+<script>
+  function showPopup(info) {
+    document.getElementById("popup-text").textContent = info;
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+  }
+
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+    document.getElementById("overlay").style.display = "none";
+  }
+</script>
+</body>
+</html>
